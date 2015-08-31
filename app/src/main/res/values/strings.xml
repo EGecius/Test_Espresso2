@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Test_Espresso2</string>
+
+    <string name="i_am_gone">My visibility should be gone</string>
+    <string name="action_settings">Settings</string>
+    <string name="identical_id">identical id 1</string>
+    <string name="i_am_invisible">I am invisible</string>
+</resources>
