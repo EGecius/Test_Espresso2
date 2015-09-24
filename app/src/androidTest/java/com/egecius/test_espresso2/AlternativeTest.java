@@ -27,7 +27,7 @@ public class AlternativeTest {
 
 	@Test
 	public void whenMainActStarts_listIsVisible() {
-		onView(withId(R.id.visibility_gone)).check(matches(isDisplayed()));
+		onView(withId(R.id.visibility_gone)).check(matches(not(isDisplayed())));
 	}
 
 	@Test
