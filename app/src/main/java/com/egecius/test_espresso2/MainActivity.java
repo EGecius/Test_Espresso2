@@ -6,6 +6,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
+import com.egecius.test_espresso2.di.AppComponent;
+
 import javax.inject.Inject;
 
 public class MainActivity extends AppCompatActivity {
@@ -28,7 +30,8 @@ public class MainActivity extends AppCompatActivity {
 
     private void injectDependencies() {
         RealApp application = (RealApp) getApplication();
-        application.getComponent().injects(this);
+        AppComponent appComponent = application.getComponent();
+        appComponent.inject(this);
     }
 
     @Override

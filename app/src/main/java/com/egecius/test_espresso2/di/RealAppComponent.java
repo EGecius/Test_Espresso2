@@ -4,5 +4,4 @@ import dagger.Component;
 
 @Component (modules = RealAppModule.class)
 public interface RealAppComponent extends AppComponent {
-
 }
