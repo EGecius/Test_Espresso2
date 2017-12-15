@@ -7,17 +7,15 @@ import com.egecius.test_espresso2.di.DaggerApplicationComponent;
 
 public class DemoApplication extends Application {
 
-    private ApplicationComponent mComponent;
+    protected ApplicationComponent mComponent = createComponent();
 
     @Override
     public void onCreate() {
         super.onCreate();
-
-        injectDependencies();
     }
 
-    private void injectDependencies() {
-        mComponent = DaggerApplicationComponent.builder()
+    protected ApplicationComponent createComponent() {
+        return DaggerApplicationComponent.builder()
                 .build();
     }
 
