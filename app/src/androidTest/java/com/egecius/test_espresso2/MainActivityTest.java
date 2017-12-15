@@ -17,6 +17,6 @@ public class MainActivityTest {
 
     @Test
     public void textFound() {
-        onView(withText("from RealApiService")).check(matches(isDisplayed()));
+        onView(withText("from MockApiService")).check(matches(isDisplayed()));
     }
 }
