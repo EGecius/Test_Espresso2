@@ -4,16 +4,34 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
+
+import javax.inject.Inject;
 
 public class MainActivity extends AppCompatActivity {
+
+    @Inject
+    ApiService mApiService;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		injectDependencies();
 		setContentView(R.layout.activity_main);
-	}
+        setText();
+    }
 
-	@Override
+    private void setText() {
+        TextView textView = (TextView) findViewById(R.id.view_to_set);
+        textView.setText(mApiService.getString());
+    }
+
+    private void injectDependencies() {
+        DemoApplication application = (DemoApplication) getApplication();
+        application.getComponent().injects(this);
+    }
+
+    @Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.menu_main, menu);
