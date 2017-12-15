@@ -4,7 +4,7 @@ import com.egecius.test_espresso2.MainActivity;
 
 import dagger.Component;
 
-@Component (modules = MainActivityModule.class)
+@Component (modules = ApplicationModule.class)
 public interface ApplicationComponent {
 
     void injects(MainActivity mainActivity);
