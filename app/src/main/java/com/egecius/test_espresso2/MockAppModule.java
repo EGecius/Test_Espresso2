@@ -4,7 +4,7 @@ import dagger.Module;
 import dagger.Provides;
 
 @Module
-public class MockApplicationModule {
+public class MockAppModule {
 
     @Provides
     public ApiService provideApiService() {

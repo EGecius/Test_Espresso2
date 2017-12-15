@@ -6,7 +6,7 @@ import dagger.Module;
 import dagger.Provides;
 
 @Module
-public class RealApplicationModule {
+public class RealAppModule {
 
     @Provides
     public ApiService provideApiService() {

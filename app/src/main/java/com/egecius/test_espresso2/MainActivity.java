@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void injectDependencies() {
-        DemoApplication application = (DemoApplication) getApplication();
+        RealApp application = (RealApp) getApplication();
         application.getComponent().injects(this);
     }
 
