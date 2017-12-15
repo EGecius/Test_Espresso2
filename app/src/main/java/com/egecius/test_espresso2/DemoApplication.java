@@ -3,7 +3,7 @@ package com.egecius.test_espresso2;
 import android.app.Application;
 
 import com.egecius.test_espresso2.di.ApplicationComponent;
-import com.egecius.test_espresso2.di.DaggerApplicationComponent;
+import com.egecius.test_espresso2.di.DaggerRealApplicationComponent;
 
 public class DemoApplication extends Application {
 
@@ -15,7 +15,7 @@ public class DemoApplication extends Application {
     }
 
     protected ApplicationComponent createComponent() {
-        return DaggerApplicationComponent.builder()
+        return DaggerRealApplicationComponent.builder()
                 .build();
     }
 
