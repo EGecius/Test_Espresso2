@@ -1,4 +1,4 @@
-package com.egecius.test_espresso2;
+package com.egecius.test_espresso2.app;
 
 import android.app.Application;
 

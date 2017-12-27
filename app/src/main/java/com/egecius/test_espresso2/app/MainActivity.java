@@ -1,4 +1,4 @@
-package com.egecius.test_espresso2;
+package com.egecius.test_espresso2.app;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -6,6 +6,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
+import com.egecius.test_espresso2.dependencies.ApiService;
+import com.egecius.test_espresso2.R;
 import com.egecius.test_espresso2.di.AppComponent;
 
 import javax.inject.Inject;

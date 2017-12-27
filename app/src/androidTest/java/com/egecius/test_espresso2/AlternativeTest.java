@@ -11,6 +11,8 @@ import static org.hamcrest.CoreMatchers.not;
 import android.support.test.rule.ActivityTestRule;
 import android.test.suitebuilder.annotation.LargeTest;
 
+import com.egecius.test_espresso2.app.MainActivity;
+
 import org.junit.Rule;
 import org.junit.Test;
 

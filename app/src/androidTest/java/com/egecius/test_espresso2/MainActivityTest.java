@@ -7,6 +7,8 @@ import static android.support.test.espresso.matcher.ViewMatchers.withText;
 
 import android.support.test.rule.ActivityTestRule;
 
+import com.egecius.test_espresso2.app.MainActivity;
+
 import org.junit.Rule;
 import org.junit.Test;
 
