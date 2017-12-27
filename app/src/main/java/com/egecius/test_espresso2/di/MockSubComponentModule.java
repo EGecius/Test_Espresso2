@@ -1,6 +1,7 @@
 package com.egecius.test_espresso2.di;
 
-import com.egecius.test_espresso2.dependencies.RealTextProvider;
+import android.content.Context;
+
 import com.egecius.test_espresso2.dependencies.TextProvider;
 
 import dagger.Module;
@@ -10,8 +11,8 @@ import dagger.Provides;
 class MockSubComponentModule {
 
     @Provides
-    public TextProvider provideTextProvider() {
-        return new MockTextProvider();
+    public TextProvider provideTextProvider(Context context) {
+        return new MockTextProvider(context);
     }
 
 }

@@ -1,5 +1,6 @@
 package com.egecius.test_espresso2.app;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -16,6 +17,8 @@ import javax.inject.Inject;
 
 public class MainActivity extends AppCompatActivity {
 
+    @Inject
+    Context mContext;
     @Inject
     ApiService mApiService;
 
