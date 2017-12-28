@@ -1,15 +1,14 @@
-package com.egecius.test_espresso2.di;
+package com.egecius.test_espresso2.dependencies;
 
 import android.content.Context;
 
 import com.egecius.test_espresso2.R;
-import com.egecius.test_espresso2.dependencies.TextProvider;
 
-class MockTextProvider implements TextProvider {
+public class MockTextProvider implements TextProvider {
 
     private final Context context;
 
-    MockTextProvider(Context context) {
+    public MockTextProvider(Context context) {
         this.context = context;
     }
 
