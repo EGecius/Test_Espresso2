@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
 import com.egecius.test_espresso2.R;
-import com.egecius.test_espresso2.di.real.subcomponent.MySubcomponentModule;
+import com.egecius.test_espresso2.di.real.subcomponent.RealMySubcomponentModule;
 
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -14,7 +14,7 @@ import javax.inject.Named;
 public class DetailActivity extends AppCompatActivity {
 
     @Inject
-    @Named(MySubcomponentModule.TAG)
+    @Named(RealMySubcomponentModule.TAG)
     String injectedString;
 
     @Override

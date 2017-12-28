@@ -6,13 +6,13 @@ import dagger.Module;
 import dagger.Provides;
 
 @Module
-public class MySubcomponentModule {
+public class RealMySubcomponentModule {
 
-    public static final String TAG = "MySubcomponent";
+    public static final String TAG = "RealMySubcomponentModule";
 
     @Provides
     @Named(TAG)
     String providesString(){
-        return "from MySubcomponentModule";
+        return "from RealMySubcomponentModule";
     }
 }

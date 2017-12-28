@@ -4,9 +4,10 @@ import android.app.Application;
 
 import com.egecius.test_espresso2.di.AppComponent;
 import com.egecius.test_espresso2.di.real.DaggerRealAppComponent;
+import com.egecius.test_espresso2.di.real.RealAppComponent;
 import com.egecius.test_espresso2.di.real.RealAppModule;
 import com.egecius.test_espresso2.di.real.subcomponent.MySubcomponent;
-import com.egecius.test_espresso2.di.real.subcomponent.MySubcomponentModule;
+import com.egecius.test_espresso2.di.real.subcomponent.RealMySubcomponentModule;
 
 
 public class RealApp extends Application {
@@ -29,6 +30,6 @@ public class RealApp extends Application {
     }
 
     MySubcomponent getMySubcomponent() {
-        return mComponent.plus(new MySubcomponentModule());
+        return ((RealAppComponent) mComponent).plus(new RealMySubcomponentModule());
     }
 }
