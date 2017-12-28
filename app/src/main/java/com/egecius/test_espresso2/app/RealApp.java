@@ -29,7 +29,7 @@ public class RealApp extends Application {
         return mComponent;
     }
 
-    MySubcomponent getMySubcomponent() {
+    protected MySubcomponent getMySubcomponent() {
         return ((RealAppComponent) mComponent).plus(new RealMySubcomponentModule());
     }
 }
