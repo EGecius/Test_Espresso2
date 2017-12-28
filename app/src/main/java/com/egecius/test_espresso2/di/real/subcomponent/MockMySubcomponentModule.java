@@ -8,7 +8,7 @@ import dagger.Provides;
 @Module
 public class MockMySubcomponentModule {
 
-    public static final String TAG = "MockMySubcomponentModule";
+    public static final String TAG = "SubcomponentModule";
 
     @Provides
     @Named(TAG)

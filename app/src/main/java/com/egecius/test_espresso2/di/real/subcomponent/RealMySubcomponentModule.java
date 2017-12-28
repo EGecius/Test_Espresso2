@@ -8,7 +8,7 @@ import dagger.Provides;
 @Module
 public class RealMySubcomponentModule {
 
-    public static final String TAG = "RealMySubcomponentModule";
+    public static final String TAG = "SubcomponentModule";
 
     @Provides
     @Named(TAG)
