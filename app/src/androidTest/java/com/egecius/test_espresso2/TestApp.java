@@ -18,7 +18,7 @@ public class TestApp extends RealApp {
     }
 
     @Override
-    protected MySubcomponent getMySubcomponent() {
+    protected MySubcomponent createMySubcomponent() {
         return ((MockAppComponent) mComponent).plus(new MockMySubcomponentModule());
     }
 }

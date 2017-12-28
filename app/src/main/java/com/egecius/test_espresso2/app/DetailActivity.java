@@ -31,6 +31,6 @@ public class DetailActivity extends AppCompatActivity {
 
     private void injectDependencies() {
         RealApp application = (RealApp) getApplication();
-        application.getMySubcomponent().inject(this);
+        application.createMySubcomponent().inject(this);
     }
 }
