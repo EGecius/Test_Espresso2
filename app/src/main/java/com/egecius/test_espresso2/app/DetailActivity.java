@@ -6,29 +6,35 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
 import com.egecius.test_espresso2.R;
+import com.egecius.test_espresso2.di.AppComponent;
+import com.egecius.test_espresso2.di.real.subcomponent.MySubcomponentModule;
+
+import javax.inject.Inject;
+import javax.inject.Named;
 
 public class DetailActivity extends AppCompatActivity {
 
-//    @Inject
-//    TextProvider mTextProvider;
+    @Inject
+    @Named(MySubcomponentModule.TAG)
+    String injectedString;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.detail_activity);
-//        injectDependencies();
+        injectDependencies();
         setText();
     }
 
     private void setText() {
         TextView textView = (TextView) findViewById(R.id.text_to_set);
-//        textView.setText(mTextProvider.getText());
+        textView.setText(injectedString);
     }
 
-//    private void injectDependencies() {
-//        RealSubComponent component = DaggerRealSubComponent
-//                .builder()
-//                .build();
-//        component.inject(this);
-//    }
+    private void injectDependencies() {
+        RealApp application = (RealApp) getApplication();
+        AppComponent appComponent = application.getComponent();
+
+        appComponent.plus(new MySubcomponentModule()).inject(this);
+    }
 }
