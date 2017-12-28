@@ -1,8 +1,9 @@
-package com.egecius.test_espresso2.dependencies;
+package com.egecius.test_espresso2.dependencies.real;
 
 import android.content.Context;
 
 import com.egecius.test_espresso2.R;
+import com.egecius.test_espresso2.dependencies.TextProvider;
 
 public class RealTextProvider implements TextProvider {
 

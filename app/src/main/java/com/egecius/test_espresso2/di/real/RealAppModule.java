@@ -1,9 +1,9 @@
-package com.egecius.test_espresso2.di;
+package com.egecius.test_espresso2.di.real;
 
 import android.content.Context;
 
 import com.egecius.test_espresso2.dependencies.ApiService;
-import com.egecius.test_espresso2.dependencies.RealApiService;
+import com.egecius.test_espresso2.dependencies.real.RealApiService;
 
 import dagger.Module;
 import dagger.Provides;

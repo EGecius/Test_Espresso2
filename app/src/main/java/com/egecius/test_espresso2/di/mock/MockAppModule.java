@@ -1,9 +1,9 @@
-package com.egecius.test_espresso2.di;
+package com.egecius.test_espresso2.di.mock;
 
 import android.content.Context;
 
 import com.egecius.test_espresso2.dependencies.ApiService;
-import com.egecius.test_espresso2.dependencies.MockApiService;
+import com.egecius.test_espresso2.dependencies.mock.MockApiService;
 
 import dagger.Module;
 import dagger.Provides;

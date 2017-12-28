@@ -1,8 +1,9 @@
-package com.egecius.test_espresso2.dependencies;
+package com.egecius.test_espresso2.dependencies.mock;
 
 import android.content.Context;
 
 import com.egecius.test_espresso2.R;
+import com.egecius.test_espresso2.dependencies.TextProvider;
 
 public class MockTextProvider implements TextProvider {
 

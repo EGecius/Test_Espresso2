@@ -3,8 +3,8 @@ package com.egecius.test_espresso2.app;
 import android.app.Application;
 
 import com.egecius.test_espresso2.di.AppComponent;
-import com.egecius.test_espresso2.di.DaggerRealAppComponent;
-import com.egecius.test_espresso2.di.RealAppModule;
+import com.egecius.test_espresso2.di.real.DaggerRealAppComponent;
+import com.egecius.test_espresso2.di.real.RealAppModule;
 
 
 public class RealApp extends Application {

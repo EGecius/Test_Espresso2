@@ -1,4 +1,6 @@
-package com.egecius.test_espresso2.di;
+package com.egecius.test_espresso2.di.real;
+
+import com.egecius.test_espresso2.di.AppComponent;
 
 import dagger.Component;
 
