@@ -6,7 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
 import com.egecius.test_espresso2.R;
-import com.egecius.test_espresso2.di.AppComponent;
 import com.egecius.test_espresso2.di.real.subcomponent.MySubcomponentModule;
 
 import javax.inject.Inject;
@@ -33,8 +32,6 @@ public class DetailActivity extends AppCompatActivity {
 
     private void injectDependencies() {
         RealApp application = (RealApp) getApplication();
-        AppComponent appComponent = application.getComponent();
-
-        appComponent.plus(new MySubcomponentModule()).inject(this);
+        application.getMySubcomponent().inject(this);
     }
 }
