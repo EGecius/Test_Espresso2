@@ -10,6 +10,12 @@
               tools:context=".app.MainActivity">
 
     <TextView
+        android:text="Main Activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="HardcodedText"/>
+
+    <TextView
         android:id="@+id/visibility_gone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

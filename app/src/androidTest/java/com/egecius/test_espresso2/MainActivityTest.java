@@ -6,19 +6,23 @@ import static android.support.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static android.support.test.espresso.matcher.ViewMatchers.withText;
 
 import android.support.test.rule.ActivityTestRule;
-
-import com.egecius.test_espresso2.app.MainActivity;
+import android.support.test.runner.AndroidJUnit4;
 
 import org.junit.Rule;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 
+import com.egecius.test_espresso2.app.MainActivity;
+
+@RunWith (AndroidJUnit4.class)
 public class MainActivityTest {
 
-    @Rule
-    public ActivityTestRule<MainActivity> mTestRule = new ActivityTestRule<>(MainActivity.class);
+	@Rule
+	public ActivityTestRule<MainActivity> rule = new ActivityTestRule<>(MainActivity.class);
 
-    @Test
-    public void textFound() {
-        onView(withText("from MockApiService")).check(matches(isDisplayed()));
-    }
+	@Test
+	public void showsText() {
+		onView(withText("Main Activity")).check(matches(isDisplayed()));
+	}
+
 }
