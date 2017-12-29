@@ -1,4 +1,4 @@
-package com.egecius.test_espresso2.dependencies.mock;
+package com.egecius.test_espresso2.di.mock;
 
 import android.content.Context;
 
